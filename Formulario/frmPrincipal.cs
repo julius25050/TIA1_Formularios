@@ -38,5 +38,12 @@ namespace Formulario
             Facturas.Show();
             this.Hide();
         }
+
+        private void informesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInformes Informes = new frmInformes();
+            Informes.Show();
+            this.Hide();
+        }
     }
 }
