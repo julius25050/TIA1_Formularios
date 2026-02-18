@@ -44,5 +44,10 @@ namespace Formulario
             principal.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

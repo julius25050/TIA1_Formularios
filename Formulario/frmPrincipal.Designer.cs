@@ -67,7 +67,7 @@
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(180, 22);
+            salirToolStripMenuItem.Size = new Size(96, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -90,6 +90,7 @@
             productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             productosToolStripMenuItem.Size = new Size(180, 22);
             productosToolStripMenuItem.Text = "Productos";
+            productosToolStripMenuItem.Click += productosToolStripMenuItem_Click;
             // 
             // categoriasToolStripMenuItem
             // 
@@ -108,13 +109,14 @@
             // facturasToolStripMenuItem
             // 
             facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
-            facturasToolStripMenuItem.Size = new Size(121, 22);
+            facturasToolStripMenuItem.Size = new Size(180, 22);
             facturasToolStripMenuItem.Text = "Facturas";
+            facturasToolStripMenuItem.Click += facturasToolStripMenuItem_Click;
             // 
             // informesToolStripMenuItem
             // 
             informesToolStripMenuItem.Name = "informesToolStripMenuItem";
-            informesToolStripMenuItem.Size = new Size(121, 22);
+            informesToolStripMenuItem.Size = new Size(180, 22);
             informesToolStripMenuItem.Text = "Informes";
             // 
             // seguridadToolStripMenuItem

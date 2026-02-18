@@ -24,5 +24,19 @@ namespace Formulario
             this.Hide();
 
         }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductos productos = new frmProductos();
+            productos.Show();
+            this.Hide();
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFacturas Facturas = new frmFacturas();
+            Facturas.Show();
+            this.Hide();
+        }
     }
 }

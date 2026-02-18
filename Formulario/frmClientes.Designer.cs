@@ -68,6 +68,7 @@
             textBox1.Size = new Size(236, 23);
             textBox1.TabIndex = 7;
             textBox1.Text = "Nombre cliente";
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 

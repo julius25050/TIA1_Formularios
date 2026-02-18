@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    public partial class frmProductos : Form
+    public partial class frmFacturas : Form
     {
-        public frmProductos()
+        public frmFacturas()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void salir_Click(object sender, EventArgs e)
