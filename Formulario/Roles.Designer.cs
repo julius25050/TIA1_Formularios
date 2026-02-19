@@ -32,9 +32,9 @@
             label1 = new Label();
             label3 = new Label();
             textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
             salir = new Button();
             btnActualizar = new Button();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // label2
@@ -43,27 +43,27 @@
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(263, 9);
             label2.Name = "label2";
-            label2.Size = new Size(240, 25);
+            label2.Size = new Size(194, 25);
             label2.TabIndex = 19;
-            label2.Text = "ADMINISTRACIÓN ROLES";
+            label2.Text = "ROL DE EMPLEADOS";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(277, 90);
+            label1.Location = new Point(253, 90);
             label1.Name = "label1";
-            label1.Size = new Size(47, 15);
+            label1.Size = new Size(68, 15);
             label1.TabIndex = 20;
-            label1.Text = "Usuario";
+            label1.Text = "Nombre rol";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(273, 151);
+            label3.Location = new Point(253, 131);
             label3.Name = "label3";
-            label3.Size = new Size(51, 15);
+            label3.Size = new Size(137, 15);
             label3.TabIndex = 21;
-            label3.Text = "Tipo Rol";
+            label3.Text = "Descripcion detallada rol";
             // 
             // textBox1
             // 
@@ -72,20 +72,12 @@
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 22;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(330, 143);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 23;
-            // 
             // salir
             // 
             salir.BackColor = Color.DarkSlateGray;
             salir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             salir.ForeColor = SystemColors.ButtonHighlight;
-            salir.Location = new Point(400, 212);
+            salir.Location = new Point(403, 229);
             salir.Margin = new Padding(0);
             salir.Name = "salir";
             salir.Size = new Size(86, 37);
@@ -99,7 +91,7 @@
             btnActualizar.BackColor = Color.DarkSlateGray;
             btnActualizar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnActualizar.ForeColor = SystemColors.ButtonFace;
-            btnActualizar.Location = new Point(296, 212);
+            btnActualizar.Location = new Point(296, 229);
             btnActualizar.Margin = new Padding(0);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(82, 37);
@@ -107,14 +99,22 @@
             btnActualizar.Text = "Actualizar ";
             btnActualizar.UseVisualStyleBackColor = false;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(253, 149);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(255, 60);
+            textBox2.TabIndex = 32;
+            // 
             // Roles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 305);
+            Controls.Add(textBox2);
             Controls.Add(salir);
             Controls.Add(btnActualizar);
-            Controls.Add(comboBox1);
             Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -131,8 +131,8 @@
         private Label label1;
         private Label label3;
         private TextBox textBox1;
-        private ComboBox comboBox1;
         private Button salir;
         private Button btnActualizar;
+        private TextBox textBox2;
     }
 }
