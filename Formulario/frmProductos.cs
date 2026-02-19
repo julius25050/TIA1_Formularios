@@ -12,6 +12,40 @@ namespace Formulario
 {
     public partial class frmProductos : Form
     {
+
+        private ErrorProvider errorProvider = new ErrorProvider();
+
+
+        private bool ValidateFields()
+        {
+            bool isValid = true;
+            string errorMessage = "El campo no puede estar vacío";
+
+            var fields = new[]
+            {
+        txtProductname,
+        textBox2,
+        textBox3,
+        textBox4,
+        textBox5
+    };
+
+            foreach (var field in fields)
+            {
+                if (string.IsNullOrWhiteSpace(field.Text))
+                {
+                    errorProvider.SetError(field, errorMessage);
+                    isValid = false;
+                }
+                else
+                {
+                    errorProvider.SetError(field, string.Empty); // Limpia el error si ya fue corregido
+                }
+            }
+
+            return isValid;
+        }
+
         public frmProductos()
         {
             InitializeComponent();
@@ -32,6 +66,14 @@ namespace Formulario
             frmPrincipal principal = new frmPrincipal();
             principal.Show();
             this.Hide();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (ValidateFields())
+            {
+                // Lógica principal si todo está correcto
+            }
         }
     }
 }

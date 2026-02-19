@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             linkLabel1 = new LinkLabel();
             txtNameClient = new TextBox();
@@ -37,6 +38,8 @@
             txtEmailClient = new TextBox();
             btnActualizar = new Button();
             salir = new Button();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -134,6 +137,10 @@
             salir.UseVisualStyleBackColor = false;
             salir.Click += salir_Click;
             // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
             // frmClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -151,6 +158,7 @@
             Name = "frmClientes";
             Text = "frmClientes";
             TransparencyKey = Color.Transparent;
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -166,5 +174,6 @@
         private TextBox txtEmailClient;
         private Button btnActualizar;
         private Button salir;
+        private ErrorProvider errorProvider1;
     }
 }

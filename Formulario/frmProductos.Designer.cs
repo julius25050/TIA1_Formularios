@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            components = new System.ComponentModel.Container();
+            txtProductname = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
@@ -46,15 +47,17 @@
             textBox6 = new TextBox();
             salir = new Button();
             btnActualizar = new Button();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txtProductname
             // 
-            textBox1.Location = new Point(125, 100);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
-            textBox1.Tag = "Nombre";
+            txtProductname.Location = new Point(125, 100);
+            txtProductname.Name = "txtProductname";
+            txtProductname.Size = new Size(100, 23);
+            txtProductname.TabIndex = 0;
+            txtProductname.Tag = "Nombre";
             // 
             // textBox2
             // 
@@ -215,6 +218,11 @@
             btnActualizar.TabIndex = 17;
             btnActualizar.Text = "Actualizar ";
             btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // frmProductos
             // 
@@ -238,17 +246,18 @@
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtProductname);
             Name = "frmProductos";
             Tag = "";
             Text = "Productos";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtProductname;
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
@@ -266,5 +275,6 @@
         private TextBox textBox6;
         private Button salir;
         private Button btnActualizar;
+        private ErrorProvider errorProvider1;
     }
 }

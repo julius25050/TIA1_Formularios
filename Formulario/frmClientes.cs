@@ -12,9 +12,41 @@ namespace Formulario
 {
     public partial class frmClientes : Form
     {
+
+        private ErrorProvider errorProvider = new ErrorProvider();
         public frmClientes()
         {
             InitializeComponent();
+        }
+
+        private bool ValidateFields()
+        {
+            bool isValid = true;
+            string errorMessage = "El campo no puede estar vacío";
+
+            var fields = new[]
+            {
+        txtNameClient,
+        txtIdClient,
+        txtAddressClient,
+        txtTelClient,
+        txtEmailClient
+    };
+
+            foreach (var field in fields)
+            {
+                if (string.IsNullOrWhiteSpace(field.Text))
+                {
+                    errorProvider.SetError(field, errorMessage);
+                    isValid = false;
+                }
+                else
+                {
+                    errorProvider.SetError(field, string.Empty); // Limpia el error si ya fue corregido
+                }
+            }
+
+            return isValid;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,7 +84,10 @@ namespace Formulario
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-
+            if (ValidateFields())
+            {
+                // Lógica principal si todo está correcto
+            }
         }
     }
 }

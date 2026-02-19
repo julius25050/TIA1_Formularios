@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             txtNameClient = new TextBox();
             txtIdClient = new TextBox();
             txtAddressClient = new TextBox();
@@ -44,6 +45,8 @@
             textBox1 = new TextBox();
             btnActualizar = new Button();
             salir = new Button();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // txtNameClient
@@ -197,6 +200,10 @@
             salir.UseVisualStyleBackColor = false;
             salir.Click += salir_Click_1;
             // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -221,6 +228,7 @@
             Name = "frmEmpleados";
             Text = "frmEmpleados";
             Load += frmEmpleados_Load;
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -243,5 +251,6 @@
         private TextBox textBox1;
         private Button btnActualizar;
         private Button salir;
+        private ErrorProvider errorProvider1;
     }
 }
