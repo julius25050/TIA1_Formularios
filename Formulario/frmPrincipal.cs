@@ -52,5 +52,19 @@ namespace Formulario
             catProductos.Show();
             this.Hide();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmpleados Empleados = new frmEmpleados();
+            Empleados.Show();
+            this.Hide();
+        }
+
+        private void seguridadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAdminSeguridad Seguridad = new frmAdminSeguridad();
+            Seguridad.Show();
+            this.Hide();
+        }
     }
 }
