@@ -66,5 +66,12 @@ namespace Formulario
             Seguridad.Show();
             this.Hide();
         }
+
+        private void rolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Roles roles = new Roles();
+            roles.Show();
+            this.Hide();
+        }
     }
 }

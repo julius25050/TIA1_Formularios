@@ -16,5 +16,12 @@ namespace Formulario
         {
             InitializeComponent();
         }
+
+        private void salir_Click(object sender, EventArgs e)
+        {
+            frmPrincipal principal = new frmPrincipal();
+            principal.Show();
+            this.Hide();
+        }
     }
 }

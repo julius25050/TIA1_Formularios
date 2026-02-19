@@ -140,6 +140,7 @@
             rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
             rolesToolStripMenuItem.Size = new Size(180, 22);
             rolesToolStripMenuItem.Text = "Roles";
+            rolesToolStripMenuItem.Click += rolesToolStripMenuItem_Click;
             // 
             // seguridadToolStripMenuItem1
             // 
