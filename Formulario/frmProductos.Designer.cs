@@ -241,7 +241,7 @@
             Controls.Add(textBox1);
             Name = "frmProductos";
             Tag = "";
-            Text = "frmProductos";
+            Text = "Productos";
             ResumeLayout(false);
             PerformLayout();
         }

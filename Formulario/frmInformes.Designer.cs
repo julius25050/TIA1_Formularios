@@ -220,7 +220,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "frmInformes";
-            Text = "frmInformes";
+            Text = "Informes";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvInforme).EndInit();

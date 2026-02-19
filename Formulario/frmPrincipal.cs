@@ -45,5 +45,12 @@ namespace Formulario
             Informes.Show();
             this.Hide();
         }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCategoriaProductos catProductos = new frmCategoriaProductos();
+            catProductos.Show();
+            this.Hide();
+        }
     }
 }

@@ -257,7 +257,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "frmFacturas";
-            Text = "frmFacturas";
+            Text = "Facturas";
             Load += frmFacturas_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
