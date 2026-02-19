@@ -30,12 +30,12 @@
         {
             label1 = new Label();
             linkLabel1 = new LinkLabel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            actualizar = new Button();
+            txtNameClient = new TextBox();
+            txtIdClient = new TextBox();
+            txtAddressClient = new TextBox();
+            txtTelClient = new TextBox();
+            txtEmailClient = new TextBox();
+            btnActualizar = new Button();
             salir = new Button();
             SuspendLayout();
             // 
@@ -45,89 +45,89 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(198, 33);
+            label1.Location = new Point(93, 29);
             label1.Name = "label1";
-            label1.Size = new Size(303, 37);
+            label1.Size = new Size(358, 37);
             label1.TabIndex = 0;
-            label1.Text = "Nuevo registro cliente";
+            label1.Text = "NUEVO REGISTRO CLIENTE";
             label1.Click += label1_Click;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(102, 240);
+            linkLabel1.Location = new Point(23, 248);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(0, 15);
             linkLabel1.TabIndex = 6;
             // 
-            // textBox1
+            // txtNameClient
             // 
-            textBox1.BackColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(227, 99);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(236, 23);
-            textBox1.TabIndex = 7;
-            textBox1.Text = "Nombre cliente";
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtNameClient.BackColor = SystemColors.ScrollBar;
+            txtNameClient.Location = new Point(93, 107);
+            txtNameClient.Name = "txtNameClient";
+            txtNameClient.Size = new Size(358, 23);
+            txtNameClient.TabIndex = 7;
+            txtNameClient.Text = "Nombre cliente";
+            txtNameClient.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtIdClient
             // 
-            textBox2.BackColor = SystemColors.ScrollBar;
-            textBox2.Location = new Point(227, 137);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(236, 23);
-            textBox2.TabIndex = 8;
-            textBox2.Text = "Documento";
+            txtIdClient.BackColor = SystemColors.ScrollBar;
+            txtIdClient.Location = new Point(93, 146);
+            txtIdClient.Name = "txtIdClient";
+            txtIdClient.Size = new Size(358, 23);
+            txtIdClient.TabIndex = 8;
+            txtIdClient.Text = "Documento";
             // 
-            // textBox3
+            // txtAddressClient
             // 
-            textBox3.BackColor = SystemColors.ScrollBar;
-            textBox3.Location = new Point(227, 178);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(236, 23);
-            textBox3.TabIndex = 9;
-            textBox3.Text = "Direccion";
+            txtAddressClient.BackColor = SystemColors.ScrollBar;
+            txtAddressClient.Location = new Point(93, 187);
+            txtAddressClient.Name = "txtAddressClient";
+            txtAddressClient.Size = new Size(358, 23);
+            txtAddressClient.TabIndex = 9;
+            txtAddressClient.Text = "Direccion";
             // 
-            // textBox4
+            // txtTelClient
             // 
-            textBox4.BackColor = SystemColors.ScrollBar;
-            textBox4.Location = new Point(227, 219);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(236, 23);
-            textBox4.TabIndex = 10;
-            textBox4.Text = "Telefono";
+            txtTelClient.BackColor = SystemColors.ScrollBar;
+            txtTelClient.Location = new Point(93, 228);
+            txtTelClient.Name = "txtTelClient";
+            txtTelClient.Size = new Size(358, 23);
+            txtTelClient.TabIndex = 10;
+            txtTelClient.Text = "Telefono";
             // 
-            // textBox5
+            // txtEmailClient
             // 
-            textBox5.BackColor = SystemColors.ScrollBar;
-            textBox5.Location = new Point(227, 261);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(236, 23);
-            textBox5.TabIndex = 11;
-            textBox5.Text = "Email";
+            txtEmailClient.BackColor = SystemColors.ScrollBar;
+            txtEmailClient.Location = new Point(93, 270);
+            txtEmailClient.Name = "txtEmailClient";
+            txtEmailClient.Size = new Size(358, 23);
+            txtEmailClient.TabIndex = 11;
+            txtEmailClient.Text = "Email";
             // 
-            // actualizar
+            // btnActualizar
             // 
-            actualizar.BackColor = Color.DarkSlateGray;
-            actualizar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            actualizar.ForeColor = SystemColors.ButtonFace;
-            actualizar.Location = new Point(172, 319);
-            actualizar.Margin = new Padding(0);
-            actualizar.Name = "actualizar";
-            actualizar.Size = new Size(75, 37);
-            actualizar.TabIndex = 12;
-            actualizar.Text = "Actualizar ";
-            actualizar.UseVisualStyleBackColor = false;
+            btnActualizar.BackColor = Color.DarkSlateGray;
+            btnActualizar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnActualizar.ForeColor = SystemColors.ButtonFace;
+            btnActualizar.Location = new Point(93, 327);
+            btnActualizar.Margin = new Padding(0);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(82, 37);
+            btnActualizar.TabIndex = 12;
+            btnActualizar.Text = "Actualizar ";
+            btnActualizar.UseVisualStyleBackColor = false;
             // 
             // salir
             // 
             salir.BackColor = Color.DarkSlateGray;
             salir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             salir.ForeColor = SystemColors.ButtonHighlight;
-            salir.Location = new Point(482, 319);
+            salir.Location = new Point(365, 327);
             salir.Margin = new Padding(0);
             salir.Name = "salir";
-            salir.Size = new Size(75, 37);
+            salir.Size = new Size(86, 37);
             salir.TabIndex = 13;
             salir.Text = "Salir";
             salir.UseVisualStyleBackColor = false;
@@ -137,14 +137,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(545, 437);
             Controls.Add(salir);
-            Controls.Add(actualizar);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnActualizar);
+            Controls.Add(txtEmailClient);
+            Controls.Add(txtTelClient);
+            Controls.Add(txtAddressClient);
+            Controls.Add(txtIdClient);
+            Controls.Add(txtNameClient);
             Controls.Add(linkLabel1);
             Controls.Add(label1);
             Name = "frmClientes";
@@ -158,12 +158,12 @@
 
         private Label label1;
         private LinkLabel linkLabel1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button actualizar;
+        private TextBox txtNameClient;
+        private TextBox txtIdClient;
+        private TextBox txtAddressClient;
+        private TextBox txtTelClient;
+        private TextBox txtEmailClient;
+        private Button btnActualizar;
         private Button salir;
     }
 }

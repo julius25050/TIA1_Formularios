@@ -23,5 +23,10 @@ namespace Formulario
             principal.Show();
             this.Hide();
         }
+
+        private void frmFacturas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

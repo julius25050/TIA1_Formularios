@@ -39,7 +39,6 @@
             comboBox2 = new ComboBox();
             textBox1 = new TextBox();
             panel1 = new Panel();
-            label10 = new Label();
             comboBox3 = new ComboBox();
             label9 = new Label();
             monthCalendar1 = new MonthCalendar();
@@ -48,6 +47,7 @@
             dataGridView1 = new DataGridView();
             label11 = new Label();
             salir = new Button();
+            btnActualizar = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -66,7 +66,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(53, 59);
+            label2.Location = new Point(20, 11);
             label2.Name = "label2";
             label2.Size = new Size(69, 15);
             label2.TabIndex = 7;
@@ -75,7 +75,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(64, 93);
+            label3.Location = new Point(20, 67);
             label3.Name = "label3";
             label3.Size = new Size(44, 15);
             label3.TabIndex = 8;
@@ -84,7 +84,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(56, 135);
+            label4.Location = new Point(20, 98);
             label4.Name = "label4";
             label4.Size = new Size(60, 15);
             label4.TabIndex = 9;
@@ -93,7 +93,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(53, 172);
+            label5.Location = new Point(20, 152);
             label5.Name = "label5";
             label5.Size = new Size(63, 15);
             label5.TabIndex = 10;
@@ -102,7 +102,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(55, 210);
+            label6.Location = new Point(20, 188);
             label6.Name = "label6";
             label6.Size = new Size(53, 15);
             label6.TabIndex = 11;
@@ -111,7 +111,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(49, 244);
+            label7.Location = new Point(20, 225);
             label7.Name = "label7";
             label7.Size = new Size(73, 15);
             label7.TabIndex = 12;
@@ -120,7 +120,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(138, 90);
+            comboBox1.Location = new Point(110, 59);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(214, 23);
             comboBox1.TabIndex = 13;
@@ -128,38 +128,37 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(138, 132);
+            comboBox2.Location = new Point(110, 98);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(214, 23);
             comboBox2.TabIndex = 14;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(138, 56);
+            textBox1.Location = new Point(110, 8);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(114, 23);
             textBox1.TabIndex = 15;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label10);
             panel1.Controls.Add(comboBox3);
             panel1.Controls.Add(label9);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(monthCalendar1);
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(comboBox2);
             panel1.Controls.Add(label8);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
             panel1.Location = new Point(33, 37);
             panel1.Name = "panel1";
-            panel1.Size = new Size(703, 258);
+            panel1.Size = new Size(703, 272);
             panel1.TabIndex = 16;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(328, 188);
-            label10.Name = "label10";
-            label10.Size = new Size(73, 15);
-            label10.TabIndex = 17;
-            label10.Text = "Total factura";
             // 
             // comboBox3
             // 
@@ -216,16 +215,16 @@
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.Location = new Point(28, -1);
             label11.Name = "label11";
-            label11.Size = new Size(86, 15);
+            label11.Size = new Size(109, 15);
             label11.TabIndex = 17;
-            label11.Text = "Estado factura";
+            label11.Text = "DETALLE FACTURA";
             // 
             // salir
             // 
             salir.BackColor = Color.DarkSlateGray;
             salir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             salir.ForeColor = SystemColors.ButtonHighlight;
-            salir.Location = new Point(579, 301);
+            salir.Location = new Point(661, 521);
             salir.Margin = new Padding(0);
             salir.Name = "salir";
             salir.Size = new Size(75, 37);
@@ -234,26 +233,32 @@
             salir.UseVisualStyleBackColor = false;
             salir.Click += salir_Click;
             // 
+            // btnActualizar
+            // 
+            btnActualizar.BackColor = Color.DarkSlateGray;
+            btnActualizar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnActualizar.ForeColor = SystemColors.ButtonFace;
+            btnActualizar.Location = new Point(661, 341);
+            btnActualizar.Margin = new Padding(0);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(75, 37);
+            btnActualizar.TabIndex = 20;
+            btnActualizar.Text = "Actualizar ";
+            btnActualizar.UseVisualStyleBackColor = false;
+            // 
             // frmFacturas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 589);
+            ClientSize = new Size(774, 589);
+            Controls.Add(btnActualizar);
             Controls.Add(salir);
             Controls.Add(panel2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "frmFacturas";
             Text = "frmFacturas";
+            Load += frmFacturas_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -280,10 +285,10 @@
         private Label label9;
         private MonthCalendar monthCalendar1;
         private Label label8;
-        private Label label10;
         private Panel panel2;
         private DataGridView dataGridView1;
         private Label label11;
         private Button salir;
+        private Button btnActualizar;
     }
 }
